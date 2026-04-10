@@ -7,17 +7,20 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      /// Wraps the entire page content to allow scrolling if content exceeds screen height
-      child: Column(
-        children: [
-          /// Display the user profile header with name, bio, and contact information
-          const HeaderSection(),
-          const SizedBox(height: 20),
+    return Container(
+      color: Colors.grey[100],
+      child: SingleChildScrollView(
+        /// Wraps the entire page content to allow scrolling if content exceeds screen height
+        child: Column(
+          children: [
+            /// Display the user profile header with name, bio, and contact information
+            const HeaderSection(),
+            const SizedBox(height: 20),
 
-          /// Display the interests section with cards showcasing user interests
-          const Feature(),
-        ],
+            /// Display the interests section with cards showcasing user interests
+            const Feature(),
+          ],
+        ),
       ),
     );
   }

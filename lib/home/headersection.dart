@@ -6,6 +6,11 @@ class HeaderSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.all(16.0),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+      ),
       padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,7 +50,7 @@ class HeaderSection extends StatelessWidget {
           const Column(
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Icon(Icons.email, size: 16, color: Colors.grey),
                   SizedBox(width: 8),
@@ -57,7 +62,7 @@ class HeaderSection extends StatelessWidget {
               ),
               SizedBox(height: 8),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Icon(Icons.phone, size: 16, color: Colors.grey),
                   SizedBox(width: 8),
