@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:simple_flutter_screen/feature/card.dart';
 
 class Feature extends StatelessWidget {
-  const Feature({
-    super.key,
-  }); // here super is used to pass the key to the parent class (StatelessWidget)
+  const Feature({super.key});
+  // Constructor passes the key to the parent StatelessWidget class
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +12,7 @@ class Feature extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header with divider
+          /// Header section with decorative lines on both sides of the "Interests" title
           Row(
             children: [
               Expanded(child: Container(height: 2, color: Colors.grey[300])),
@@ -28,7 +27,8 @@ class Feature extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20),
-          // 2 cards side by side
+
+          /// Display two interest cards side by side - Travel and Photography
           Row(
             children: [
               Expanded(

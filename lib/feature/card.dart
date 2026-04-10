@@ -11,6 +11,7 @@ class CardWidget extends StatelessWidget {
     required this.text,
     required this.description,
   });
+  // Constructor requires an image URL, title text, and description for the card
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ class HeaderSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Profile image rounded
+          /// Display the user's circular profile picture with a 60px radius
           CircleAvatar(
             radius: 60,
             backgroundImage: Image.network(
@@ -18,26 +18,30 @@ class HeaderSection extends StatelessWidget {
             ).image,
           ),
           const SizedBox(height: 16),
-          // Name
+
+          /// Display the user's full name in bold, large text
           const Text(
             'John Doe',
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 4),
-          // Position
+
+          /// Display the user's professional title/position
           const Text(
             'Flutter Developer',
             style: TextStyle(fontSize: 14, color: Colors.grey),
           ),
           const SizedBox(height: 12),
-          // Description
+
+          /// Display a brief bio describing the user's passion and experience
           const Text(
             'Passionate about creating user-friendly and engaging digital experiences.',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 13, color: Colors.grey),
           ),
           const SizedBox(height: 16),
-          // Contact Info
+
+          /// Contact information section with email and phone number
           const Column(
             children: [
               Row(
@@ -66,7 +70,8 @@ class HeaderSection extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 16),
-          // Buttons
+
+          /// Action buttons for following the user and sending a direct message
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

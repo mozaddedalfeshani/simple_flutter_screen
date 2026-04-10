@@ -17,13 +17,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: const Text('Flutter Demo'),
-        ),
-        body: const Home(),
-      ),
+      home: SafeArea(child: Scaffold(body: const Home())),
     );
   }
 }
